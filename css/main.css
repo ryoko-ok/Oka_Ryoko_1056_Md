@@ -18,10 +18,31 @@ h2
 	font-weight: bold;
 }
 
+h3
+{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
 p
 {
 	line-height: 24px;
 	margin-bottom: 2px;
+}
+
+a:link, a:visited { 
+	color: white;
+ 	text-decoration: blink; 
+ 	font-weight: bold;
+ 	padding: 5px;
+}
+
+a:hover, a:active { 
+	color: white;
+	text-decoration: blink; 
+	font-weight: bold;
+	padding: 5px;
 }
 
 
@@ -110,23 +131,6 @@ p
 	color: white;
 }
 
-/*-- Index page --*/
-
-.resources {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 20px;
-}
-
-.about, .products, .events, .contacts {
-	background-color: #000;
-	color: white;
-	text-align: center;
-	width: 220px;
-	height: 300px; 
-}
-/*-- Close Index --*/
 
 /*-- Open Contact --*/
 
@@ -231,6 +235,40 @@ p
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Resources */
+
+.resources {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+
+.wrapper {
+  position:relative;
+  display:inline-block;
+  text-align: center;
+   width: 220px;
+  height: 300px; 
+}
+
+.label {
+  position:absolute;
+  color:white;
+  font-weight: bold;
+  background: #787878;
+  opacity: 60%;
+  width: 100%;
+}
+
+.label-center{
+  left: 0px;
+  top: 0px;
+}
+
 
 
 #mapArea {
