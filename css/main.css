@@ -262,11 +262,14 @@ a:hover, a:active {
   background: #787878;
   opacity: 60%;
   width: 100%;
+  margin: 10px 0;
 }
 
 .label-center{
   left: 0px;
   top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
