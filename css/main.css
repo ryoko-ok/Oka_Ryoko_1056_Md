@@ -579,12 +579,6 @@ input[type=submit]:hover {
 	padding-bottom: 20px;
 }
 
-.petCon img {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-}
-
 .petCon h3 {
 	color: #84C346;
 }
@@ -593,6 +587,12 @@ input[type=submit]:hover {
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 10px;
+}
+
+.petCon_imgfloat img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
 }
 
 
