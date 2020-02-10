@@ -32,12 +32,6 @@ h3 {
 	margin: 10px 0 5px 0;
 }
 
-h4 {
-	font-size: 10px;
-	line-height: 14px;
-	color: #808080;
-	margin-top: 20px;
-}
 
 
 p {
@@ -105,6 +99,13 @@ a:hover, a:active {
 	text-align: center;
 }
 
+#discription {
+	font-size: 10px;
+	line-height: 14px;
+	color: #808080;
+	margin-top: 20px;
+}
+
 #mainNav {
 	margin: 0;
 	padding: 0;
@@ -159,8 +160,129 @@ a:hover, a:active {
 	padding-bottom: 20px;
 }
 
-/*-- paw animation --*/
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 980px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*-- Close slideshow --*/
+
+/*-- Open Resources --*/
+
+.resources {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+
+.wrapper {
+  position:relative;
+  display:inline-block;
+  text-align: center;
+  width: 220px;
+  height: 300px; 
+}
+
+
+.label {
+  position:absolute;
+  color:white;
+  font-weight: bold;
+  background: #787878;
+  opacity: 70%;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.label:hover {
+  background: #84C346;
+  opacity: 70%;
+}
+
+
+
+.label-center{
+  left: 0px;
+  top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*-- Close resorces --*/
+
+/*-- paw animation --*/
 /* paw prints */
 .pad {
     width: 12px;
@@ -271,7 +393,6 @@ a:hover, a:active {
   animation: walk 3s linear infinite 1.5s;
 }   
 
-
 /* walking effect animation keyframes */
     
 @-webkit-keyframes walk {
@@ -348,123 +469,7 @@ input[type=submit]:hover {
   background-color: #808080;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 980px;
-  position: relative;
-  margin: auto;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* Resources */
-
-.resources {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 30px;
-	margin-bottom: 40px;
-}
-
-
-.wrapper {
-  position:relative;
-  display:inline-block;
-  text-align: center;
-  width: 220px;
-  height: 300px; 
-}
-
-
-.label {
-  position:absolute;
-  color:white;
-  font-weight: bold;
-  background: #787878;
-  opacity: 70%;
-  width: 100%;
-  margin: 10px 0;
-}
-
-.label:hover {
-  background: #84C346;
-  opacity: 70%;
-}
-
-
-
-.label-center{
-  left: 0px;
-  top: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 
 #mapArea {
 	width: 380px;
