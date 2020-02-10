@@ -32,13 +32,6 @@ h3 {
 	margin: 10px 0 5px 0;
 }
 
-h4 {
-	font-size: 10px;
-	line-height: 14px;
-	color: #808080;
-	margin-top: 20px;
-}
-
 
 p {
 	line-height: 24px;
@@ -104,6 +97,14 @@ a:hover, a:active {
 	margin: 100px 40px;
 	text-align: center;
 }
+
+#discription {
+	font-size: 10px;
+	line-height: 14px;
+	color: #808080;
+	margin-top: 20px;
+}
+
 
 #mainNav {
 	margin: 0;
@@ -574,12 +575,6 @@ input[type=submit]:hover {
 	padding-bottom: 20px;
 }
 
-.petCon img {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-}
-
 .petCon h3 {
 	color: #84C346;
 }
@@ -588,6 +583,12 @@ input[type=submit]:hover {
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 10px;
+}
+
+.petCon_imgfloat img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
 }
 
 
