@@ -32,12 +32,6 @@ h3 {
 	margin: 10px 0 5px 0;
 }
 
-h4 {
-	font-size: 10px;
-	line-height: 14px;
-	color: #808080;
-	margin-top: 20px;
-}
 
 
 p {
@@ -105,6 +99,13 @@ a:hover, a:active {
 	text-align: center;
 }
 
+#discription {
+	font-size: 10px;
+	line-height: 14px;
+	color: #808080;
+	margin-top: 20px;
+}
+
 #mainNav {
 	margin: 0;
 	padding: 0;
@@ -159,8 +160,129 @@ a:hover, a:active {
 	padding-bottom: 20px;
 }
 
-/*-- paw animation --*/
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 980px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*-- Close slideshow --*/
+
+/*-- Open Resources --*/
+
+.resources {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+
+.wrapper {
+  position:relative;
+  display:inline-block;
+  text-align: center;
+  width: 220px;
+  height: 300px; 
+}
+
+
+.label {
+  position:absolute;
+  color:white;
+  font-weight: bold;
+  background: #787878;
+  opacity: 70%;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.label:hover {
+  background: #84C346;
+  opacity: 70%;
+}
+
+
+
+.label-center{
+  left: 0px;
+  top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*-- Close resorces --*/
+
+/*-- paw animation --*/
 /* paw prints */
 .pad {
     width: 12px;
@@ -271,7 +393,6 @@ a:hover, a:active {
   animation: walk 3s linear infinite 1.5s;
 }   
 
-
 /* walking effect animation keyframes */
     
 @-webkit-keyframes walk {
@@ -289,191 +410,6 @@ a:hover, a:active {
 /*-- Close paw steps --*/
 
 
-/*-- Open Contact --*/
-
-#mainContact {
-	width: 980px;
-	padding: 20px 20px 0 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-
-#contactArea {
-	width: 470px;
-	border-right: solid 1px #ccc;
-	margin-bottom: 30px;
-	padding: 0 20px 20px 0;
-}
-
-#contactText {
-	font-size: 21px;
-	margin-bottom: 30px;
-	width: 340px;
-	height: 75px;
-	background-color: #000;
-}
-
-#contactForm {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-* {box-sizing:border-box}
-
-/* Contact form style */
-input[type=text], select, textarea {
-  width: 80%;
-  padding: 5px;
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 5px;
-  margin-bottom: 20px; 
-  resize: vertical
-}
-
-input[type=submit] {
-  background-color: #84C346;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-input[type=submit]:hover {
-  background-color: #808080;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 980px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* Resources */
-
-.resources {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 30px;
-	margin-bottom: 40px;
-}
-
-
-.wrapper {
-  position:relative;
-  display:inline-block;
-  text-align: center;
-  width: 220px;
-  height: 300px; 
-}
-
-
-.label {
-  position:absolute;
-  color:white;
-  font-weight: bold;
-  background: #787878;
-  opacity: 70%;
-  width: 100%;
-  margin: 10px 0;
-}
-
-.label:hover {
-  background: #84C346;
-  opacity: 70%;
-}
-
-
-
-.label-center{
-  left: 0px;
-  top: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-#mapArea {
-	width: 380px;
-	height: auto;
-	margin-left: 20px;
-}
-
-
-/*-- Close Contact --*/
 
 
 /*-- Open About page --*/
@@ -574,11 +510,6 @@ input[type=submit]:hover {
 	padding-bottom: 20px;
 }
 
-.petCon img {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-}
 
 .petCon h3 {
 	color: #84C346;
@@ -590,6 +521,82 @@ input[type=submit]:hover {
 	margin-bottom: 10px;
 }
 
+.petCon_imgfloat img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+
+/*-- Open Contact --*/
+
+#mainContact {
+	width: 980px;
+	padding: 20px 20px 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#contactArea {
+	width: 470px;
+	border-right: solid 1px #ccc;
+	margin-bottom: 30px;
+	padding: 0 20px 20px 0;
+}
+
+#contactText {
+	font-size: 21px;
+	margin-bottom: 30px;
+	width: 340px;
+	height: 75px;
+	background-color: #000;
+}
+
+#contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Contact form style */
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 5px;
+  margin-bottom: 20px; 
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #84C346;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #808080;
+}
+
+
+
+#mapArea {
+	width: 380px;
+	height: auto;
+	margin-left: 20px;
+}
+
+
+/*-- Close Contact --*/
 
 /*-- Open Footer --*/
 
