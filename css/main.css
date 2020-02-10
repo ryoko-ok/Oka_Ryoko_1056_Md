@@ -410,75 +410,6 @@ a:hover, a:active {
 /*-- Close paw steps --*/
 
 
-/*-- Open Contact --*/
-
-#mainContact {
-	width: 980px;
-	padding: 20px 20px 0 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-
-#contactArea {
-	width: 470px;
-	border-right: solid 1px #ccc;
-	margin-bottom: 30px;
-	padding: 0 20px 20px 0;
-}
-
-#contactText {
-	font-size: 21px;
-	margin-bottom: 30px;
-	width: 340px;
-	height: 75px;
-	background-color: #000;
-}
-
-#contactForm {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-* {box-sizing:border-box}
-
-/* Contact form style */
-input[type=text], select, textarea {
-  width: 80%;
-  padding: 5px;
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 5px;
-  margin-bottom: 20px; 
-  resize: vertical
-}
-
-input[type=submit] {
-  background-color: #84C346;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-input[type=submit]:hover {
-  background-color: #808080;
-}
-
-
-
-#mapArea {
-	width: 380px;
-	height: auto;
-	margin-left: 20px;
-}
-
-
-/*-- Close Contact --*/
 
 
 /*-- Open About page --*/
@@ -579,11 +510,6 @@ input[type=submit]:hover {
 	padding-bottom: 20px;
 }
 
-.petCon img {
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-}
 
 .petCon h3 {
 	color: #84C346;
@@ -595,6 +521,82 @@ input[type=submit]:hover {
 	margin-bottom: 10px;
 }
 
+.petCon_imgfloat img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+
+/*-- Open Contact --*/
+
+#mainContact {
+	width: 980px;
+	padding: 20px 20px 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#contactArea {
+	width: 470px;
+	border-right: solid 1px #ccc;
+	margin-bottom: 30px;
+	padding: 0 20px 20px 0;
+}
+
+#contactText {
+	font-size: 21px;
+	margin-bottom: 30px;
+	width: 340px;
+	height: 75px;
+	background-color: #000;
+}
+
+#contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* Contact form style */
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 5px;
+  margin-bottom: 20px; 
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #84C346;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #808080;
+}
+
+
+
+#mapArea {
+	width: 380px;
+	height: auto;
+	margin-left: 20px;
+}
+
+
+/*-- Close Contact --*/
 
 /*-- Open Footer --*/
 
